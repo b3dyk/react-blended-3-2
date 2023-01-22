@@ -14,7 +14,9 @@ const SearchPage = () => {
     if (!searchQuery) {
       return;
     }
+
     setIsLoading(true);
+
     fetchEventsByName(searchQuery)
       .then(setEvents)
       .catch(error => {

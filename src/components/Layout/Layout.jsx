@@ -3,7 +3,6 @@ import { StyledHeader, StyledList, StyledLink } from './Layout.styled';
 
 const Layout = () => {
   const location = useLocation();
-  console.log(location);
   return (
     <>
       {!location.pathname.includes('details') && (
